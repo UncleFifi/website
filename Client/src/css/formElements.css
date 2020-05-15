@@ -1,0 +1,15 @@
+.button {
+    width: 450px;
+    border: 1px solid;
+    text-align: center;
+    padding: 10px;
+    letter-spacing: 5px;
+    border-radius: 5px;
+    background: aliceblue;
+}
+
+.grayOhHover:hover {
+    cursor: pointer;
+    background: gainsboro;
+    color: grey;
+}
