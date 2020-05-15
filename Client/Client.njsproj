@@ -32,9 +32,36 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="server.ts" />
+    <Content Include="server\app.js" />
+    <Content Include="src\css\colors.css" />
+    <Content Include="src\css\formElements.css" />
+    <Content Include="src\css\index.css" />
+    <Content Include="src\images\eye.png" />
+    <Content Include="src\images\eye2.png" />
+    <Content Include="src\index.html" />
     <Content Include="tsconfig.json" />
     <Content Include="package.json" />
     <Content Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="%40types\" />
+    <Folder Include="server\" />
+    <Folder Include="src\" />
+    <Folder Include="src\Components\" />
+    <Folder Include="src\css\" />
+    <Folder Include="src\images\" />
+    <Folder Include="src\prototypes\" />
+    <Folder Include="src\Util\" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="%40types\apiResponses.d.ts" />
+    <TypeScriptCompile Include="%40types\images.d.ts" />
+    <TypeScriptCompile Include="src\App.tsx" />
+    <TypeScriptCompile Include="src\Components\Person.tsx" />
+    <TypeScriptCompile Include="src\index.tsx" />
+    <TypeScriptCompile Include="src\prototypes\Array.ts" />
+    <TypeScriptCompile Include="src\Util\Api.ts" />
+    <TypeScriptCompile Include="src\Util\WeatherApi.ts" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
   <ProjectExtensions>
