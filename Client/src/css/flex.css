@@ -1,0 +1,8 @@
+.flexbox-wrapper {
+    display: flex;
+}
+
+.flexbox-wrapper.flexbox-center {
+    justify-content: center;
+    align-items: center;
+}

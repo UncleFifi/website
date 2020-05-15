@@ -7,6 +7,8 @@ declare const module: any
 import './css/index.css'
 import './css/colors.css'
 import './css/formElements.css'
+import './css/Loader.css'
+import './css/flex.css'
 
 const rootNode = document.getElementById('root') as HTMLElement
 ReactDOM.render(<App />, rootNode)

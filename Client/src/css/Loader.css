@@ -1,0 +1,51 @@
+.blurred {
+    filter: blur(2px) grayscale(.5);
+}
+.LoaderPosition {
+    position: absolute;
+}
+.LoaderPosition .circle-container {
+    position: relative;
+    height: 100px;
+    width: 100px;
+}
+.LoaderPosition .circle-container.Medium {
+    position: relative;
+    height: 80px;
+    width: 80px;
+}
+
+.LoaderPosition .circle-container.isLoading 
+{
+    animation: loadingAnimation 1s linear 0s infinite;
+}
+
+.circle-container > .circle-container-blackout 
+{
+    height: 50px;
+    background: white;
+    width: 100%;
+    position: absolute;
+}
+.circle-container .circle {
+    border-radius: 50%;
+}
+/*this math is 80% of the parrentCircle*/
+.circle.white-bg {
+    background: white;
+    width: 80px;
+    height: 80px;
+}
+.LoaderPosition .circle-container.Medium .circle.white-bg {
+    width: 70px;
+    height: 70px;
+}
+
+@keyframes loadingAnimation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+  }
